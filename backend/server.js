@@ -9,12 +9,12 @@ import userRoutes from "./routes/user.routes.js";
 
 import connectToMongoDB from "./db/connectToMongoDB.js";
 import { app, server } from "./socket/socket.js";
-import job from "./cron/cron.js";
+//import job from "./cron/cron.js";
 
 dotenv.config();
 
 const __dirname = path.resolve();
-job.start();
+//job.start();
 // PORT should be assigned after calling dotenv.config() because we need to access the env variables. Didn't realize while recording the video. Sorry for the confusion.
 const PORT = process.env.PORT || 5000;
 
